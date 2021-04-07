@@ -26,9 +26,22 @@ BODY記入例（keyは記入例と同じものをご使用ください）<br>
 } 
 ```
 ## 3-2.アイデア取得
-
+![201c0564ac75f272c078b7faf4a9ad3e](https://user-images.githubusercontent.com/78333577/113824978-64c14b80-97bb-11eb-8971-bd69836c1872.gif)
+カテゴリとアイデアの一覧を取得できます。<br>
+HTTPメソッド:GET<br>
+URL:http://localhost:3000/ideas/<br>
 
 ## 3-3.カテゴリに紐付いたアイデア取得
+![443c719cc546259196e990a4fb050cb2](https://user-images.githubusercontent.com/78333577/113825380-da2d1c00-97bb-11eb-90dd-83d909fee446.gif)
+指定したカテゴリに紐付いたアイデア一覧を取得できます。<br>
+HTTPメソッド:GET<br>
+URL:http://localhost:3000/ideas/search?category_name=(カテゴリ)<br>
+(カテゴリ)には指定したいカテゴリを入力してください。<br>
+<br>
+例えばカテゴリを"会議"とする場合、URLは<br>
+http://localhost:3000/ideas/search?category_name=会議 <br>
+となります。
+
 
 # 4.工夫した点
 ## できることから実装を開始
