@@ -1,5 +1,11 @@
-# 1.API概要
+# 目次
+1.API概要
+2.使用方法
+3.API仕様
+4.工夫した点
+5.テーブル設計
 
+# 1.API概要
 ## 1-1.API名
 IdeasApi
 
@@ -9,9 +15,10 @@ IdeasApi
 登録したカテゴリを指定すると、カテゴリに紐付いたアイデア一覧を取得できます。<br>
 
 # 2.使用方法
-Google Chromeの拡張機能をご使用ください<br>
+下記Google Chromeの拡張機能をご使用ください<br>
 - Talend API Tester<br>
 chrome://extensions/?id=aejoelaoggembcahagimdiliamlcdmfm<br>
+
 # 3.API仕様
 ## 3-1.アイデア登録
 ![ff94b514617dce05cd94f35eda728c0f](https://user-images.githubusercontent.com/78333577/113824378-ad2c3980-97ba-11eb-89d8-b631301ffdfc.gif)
@@ -50,7 +57,7 @@ https://github.com/kotaro-hetsugi/ideas-app
 
 アプリケーションでMVCのコーディングと挙動確認ができたので、APIにコードを取り入れることでコードを整理しつつ作成することができました。
 
-# テーブル設計
+# 5. テーブル設計
 ## categories テーブル
 | Column   | Type   |  Options                  |
 | -------- | ------ | ------------------------- |
