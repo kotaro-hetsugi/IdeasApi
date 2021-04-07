@@ -5,22 +5,21 @@ class IdeasController < ApplicationController
     data = []
     ideas.each do |idea|
       hash = {}
-      hash[:id] = "#{idea.id}"
-      hash[:category] = "#{idea.category.name}"
+      hash[:id] = idea.id.to_s
+      hash[:category] = idea.category.name.to_s
       hash[:body] = idea.body
       data << hash
     end
     render json: data
-
   end
 
   def create
     @category_idea = CategoryIdea.new(category_idea_params)
     if @category_idea.valid?
       @category_idea.save
-      render json: @category_idea , status: 201
+      render json: @category_idea, status: 201
     else
-      render json: @category_idea.errors , status: 422
+      render json: @category_idea.errors, status: 422
     end
   end
 
@@ -35,8 +34,8 @@ class IdeasController < ApplicationController
     data = []
     ideas.each do |idea|
       hash = {}
-      hash[:id] = "#{idea.id}"
-      hash[:category] = "#{idea.category.name}"
+      hash[:id] = idea.id.to_s
+      hash[:category] = idea.category.name.to_s
       hash[:body] = idea.body
       data << hash
     end

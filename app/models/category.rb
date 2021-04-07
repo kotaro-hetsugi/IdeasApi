@@ -7,14 +7,13 @@ class Category < ApplicationRecord
 
   # validates :name, presence: true, uniqueness: true
 
-
   # def save
-    # category = Category.where(name: name).first_or_initialize
-    # category.save
-    # Category.create(name: name)
+  # category = Category.where(name: name).first_or_initialize
+  # category.save
+  # Category.create(name: name)
 
-    # category = Category.where(name: name).first_or_initialize
-    # category.save
+  # category = Category.where(name: name).first_or_initialize
+  # category.save
 
   # end
 end
