@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :category_idea do
-    category_name { '会議' }
-    body          { 'テストアイデア' }
+    category_name { Faker::Lorem.sentence }
+    body          { Faker::Lorem.sentence }
   end
 end
